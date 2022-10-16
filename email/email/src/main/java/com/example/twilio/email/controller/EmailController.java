@@ -20,7 +20,7 @@ import com.sendgrid.helpers.mail.objects.Email;
 public class EmailController {
 
 	@PostMapping(value = "/mail/send")
-	@Scheduled(cron = "* */2 * * * ?")
+	@Scheduled(cron = "* */15 * * * ?")
 	public ResponseEntity<String> sendEmail() throws IOException {
 
 		Email from = new Email();
